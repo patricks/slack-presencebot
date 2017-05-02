@@ -1,0 +1,7 @@
+version: '2'
+services:  
+  slack-presencebot:
+    image: slack-presencebot:latest
+    command: ruby presencebot.rb
+    environment:
+      - SLACK_API_TOKEN=XXX-XXX-XXX-XXX
