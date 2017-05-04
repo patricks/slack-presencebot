@@ -9,3 +9,5 @@ RUN apk update && apk upgrade && apk add --virtual build-dependencies ruby-dev b
 RUN chown -R nobody:nogroup /app  
 USER nobody  
 WORKDIR /app
+
+CMD ruby presencebot.rb
